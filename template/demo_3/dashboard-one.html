@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>داشبورد</title>
+  <!-- core:css -->
+  <link rel="stylesheet"   href="../assets/vendors/core/core.css">
+  <link rel="stylesheet" href="../assets/css/persian-datepicker-0.4.5.min.css">
+  <link rel="stylesheet" href="../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="../assets/fonts/feather-font/css/iconfont.css">
+  <link rel="stylesheet" href="../assets/vendors/flag-icon-css/css/flag-icon.min.css">
+  <link rel="stylesheet" href="../../../assets/vendors/sweetalert2/sweetalert2.min.css">
+  <link rel="stylesheet" href="../assets/css/demo_1/style.css">
+  <link rel="shortcut icon" href="../assets/images/favicon.png" />
+</head>
+
+<body class="rtl">
+  <div class="main-wrapper">
+    <!-- partial:partials/_sidebar.html -->
+    <nav class="sidebar">
+      <div class="sidebar-header" style="background-color: #1d1d1b;border: 1px solid #1d1d1b">
+ 
+        <img src="../assets/images/ariantel.png" alt="pic" style="width: 100px;height: 45px;">
+        <div class="sidebar-toggler not-active">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="sidebar-body" style="background-color: #1d1d1b;border-right: none;">
+        <ul class="nav">
+          
+          <li class="nav-item">
+            <a href="dashboard-one.html" class="nav-link" style="color:#4bf01b">
+
+              <i data-feather="home" style="padding: 3px;"></i> 
+              <span class="link-title">خانه</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../demo_3/pages/general/EditProfile.html" class="nav-link">
+
+              <i data-feather="user" style="padding: 3px;"></i>
+              <span class="link-title">پروفایل من </span>
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="" href="../demo_3/pages/general/Sim-products.html" role="button" aria-expanded="false"
+              aria-controls="emails">
+              <i data-feather="credit-card" style="padding: 3px;"></i>
+              <span class="link-title">خرید سیم کارت</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+						<a class="nav-link" data-toggle="collapse" href="#charts" role="button" aria-expanded="false"
+							aria-controls="charts">
+							<i data-feather="shopping-cart" style="padding: 3px;"></i>
+							<span class="link-title">خرید بسته</span>
+							<i class="link-arrow" data-feather="chevron-down"></i>
+						</a>
+						<div class="collapse" id="charts">
+							<ul class="nav sub-menu">
+								<li class="nav-item">
+									<a href="../demo_3/pages/general/Internet-products.html" class="nav-link">بسته اینترنت</a>
+								</li>
+								<li class="nav-item">
+									<a href="../demo_3/pages/general/Compound-products.html" class="nav-link">بسته ترکیبی</a>
+								</li>
+								
+							</ul>
+						</div>
+					</li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tables" role="button" aria-expanded="false"
+              aria-controls="tables">
+
+              <i data-feather="book-open" style="padding: 3px;"></i>
+              <span class="link-title">خدمات من</span>
+              <i class="link-arrow" data-feather="chevron-down"></i>
+            </a>
+
+            <div class="collapse" id="tables">
+              <ul class="nav sub-menu">
+                <li class="nav-item">
+                  <a href="../demo_3/pages/general/HistoryTable2.html" class="nav-link">تاریخچه بسته ها</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="../demo_3/pages/general/InvoiceTable.html" class="nav-link">صورتحساب</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="../demo_3/pages/general/InvoiceTable.html" class="nav-link">انتقال اعتبار</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="../demo_3/pages/general/InvoiceTable.html" class="nav-link">ارسال هدیه</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="https://www.ariantel.ir/مناطق-تحت-پوشش" class="nav-link">مناطق تحت پوشش</a>
+                </li>
+
+              </ul>
+
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#uiComponents" role="button" aria-expanded="false"
+                  aria-controls="uiComponents">
+                  <i data-feather="phone-call" style="padding: 3px;"></i>
+                  <span class="link-title">پشتیبانی</span>
+                  <i class="link-arrow" data-feather="chevron-down"></i>
+                </a>
+
+                <div class="collapse" id="uiComponents">
+                  <ul class="nav sub-menu">
+                    <li class="nav-item">
+                      <a href="../demo_3/pages/general/ContactUs.html" class="nav-link">تماس تلفنی</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a href="../demo_3/pages/general/Support-form.html" class="nav-link">ارسال تیکت</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a href="../demo_3/pages/tables/MyTickets.html" class="nav-link">تیکت های من</a>
+                    </li>
+
+                  </ul>
+
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="" href="../demo_3/pages/auth/login - resetpassword.html" role="button" aria-expanded="false"
+                  aria-controls="forms">
+                  <i data-feather="key" style="padding: 3px;"></i>
+                  <span class="link-title">تغییر رمز عبور</span>
+                </a>
+
+                <li class="nav-item">
+                  <a href="../demo_3/pages/general/salbEmtiaz.html" class="nav-link">
+                    <i data-feather="phone-off" style="padding: 3px;"></i>
+                    <span class="link-title">سلب مالکیت سیم کارت</span>
+                  </a>
+                </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i data-feather="log-out" style="padding: 3px;"></i> 
+                  <span class="link-title">خروج از حساب</span>
+                </a>
+              </li>
+              </li>
+            
+          </div>
+        </nav>
+    <!-- partial -->
+
+    <div class="page-wrapper">
+
+      <nav class="navbar">
+        <a href="#" class="sidebar-toggler">
+          <i data-feather="menu"></i>
+        </a>
+        <div class="navbar-content">
+          <form class="search-form" action="#">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i data-feather="search"></i>
+                </div>
+              </div>
+              <input type="text" class="form-control" name="main-search" id="navbarForm" placeholder="جستجو ...">
+            </div>
+          </form>
+          <ul class="navbar-nav">
+            
+            <div style="margin-top:10px;margin-left:10px">
+               <button type="button" class="btn btn-primary" style="width:180px;height: 35px;margin-top:3px;"><a href="../demo_3/pages/general/salbEmtiaz.html" style="color:white">سلب مالکیت سیم کارت</button> </a>
+               
+            </div>
+
+            <div style="margin-top:10px;margin-left:10px">
+              <button type="button" class="btn btn-success" style="width:100px;height: 35px;margin-top:3px;"><a href="../demo_3/pages/tables/shopping-box.html" style="color:white">سبد خرید</button> </a>
+              
+           </div>
+            <li class="nav-item dropdown nav-messages">
+              <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i data-feather="mail"></i>
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="messageDropdown">
+                <div class="dropdown-header d-flex align-items-center justify-content-between">
+                  <p class="mb-0 font-weight-medium">9 پیغام جدید</p>
+                  <a href="javascript:;" class="text-muted">پاک کردن همه</a>
+              </div>
+
+                <div class="dropdown-body">
+                  <a href="javascript:;" class="dropdown-item">
+                    <div class="figure">
+                      <img src="../assets/images/admin.jpg" alt="userr">
+                </div>
+
+                    <div class="content">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p>پشتیبانی فنی</p>
+                        <p class="sub-text text-muted">2 دقیقه قبل</p>
+                      </div>
+                      <p class="sub-text text-muted">سفارش ناموفق</p>
+                    </div>
+                  </a>
+
+                  <a href="javascript:;" class="dropdown-item">
+                    <div class="figure">
+                      <img src="../assets/images/admin.jpg" alt="userr">
+                    </div>
+                    <div class="content">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p>پشتیبانی مالی</p>
+                        <p class="sub-text text-muted">30 دقیقه قبل</p>
+                      </div>
+                      <p class="sub-text text-muted">جلسه</p>
+                    </div>
+                  </a>
+
+                  <a href="javascript:;" class="dropdown-item">
+                    <div class="figure">
+                      <img src="../assets/images/admin.jpg" alt="userr">
+                    </div>
+
+                    <div class="content">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p>پشتیبانی فنی</p>
+                        <p class="sub-text text-muted">1 ساعت قبل</p>
+                      </div>
+                      <p class="sub-text text-muted">به روز رسانی اطلاعات احراز هویت</p>
+                    </div>
+                  </a>
+
+                  <a href="javascript:;" class="dropdown-item">
+                    <div class="figure">
+                      <img src="../assets/images/admin.jpg" alt="userr">
+                    </div>
+                    <div class="content">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p>امور مشتریان</p>
+                        <p class="sub-text text-muted">2 ساعت قبل</p>
+                      </div>
+                      <p class="sub-text text-muted">تیکت شما بسته شد</p>
+                    </div>
+                  </a>
+
+
+                <div class="dropdown-footer d-flex align-items-center justify-content-center">
+                  <a href="javascript:;">مشاهده همه</a>
+                </div>
+              </div>
+            </li>
+            
+
+            <li class="nav-item dropdown nav-notifications">
+              <a class="nav-link dropdown-toggle" href="#" id="notificationDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i data-feather="bell"></i>
+                <div class="indicator">
+                  <div class="circle"></div>
+                </div>
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="notificationDropdown">
+                <div class="dropdown-header d-flex align-items-center justify-content-between">
+                  <p class="mb-0 font-weight-medium">6 اعلان جدید</p>
+                  <a href="javascript:;" class="text-muted">پاک کردن همه</a>
+                </div>
+
+                <div class="dropdown-body">
+                  <a href="javascript:;" class="dropdown-item">
+                    <div class="icon">
+                      <i data-feather="user-plus"></i>
+                    </div>
+                    
+                    <div class="content">
+                      <p>اطلاعات احراز هویت خود را تکمیل کنید</p>
+                      <p class="sub-text text-muted">2 ثانیه قبل</p>
+                    </div>
+                  </a>
+
+                  <a href="javascript:;" class="dropdown-item">
+                    <div class="icon">
+                      <i data-feather="gift"></i>
+                    </div>
+
+                    <div class="content">
+                      <p>سفارش جدید به سبد خرید شما اضافه گردید</p>
+                      <p class="sub-text text-muted">30 دقیقه قبل</p>
+                    </div>
+                  </a>
+
+                  <a href="javascript:;" class="dropdown-item">
+                    <div class="icon">
+                      <i data-feather="alert-circle"></i>
+                    </div>
+
+                    <div class="content">
+                      <p>خرید بسته با موفقیت انجام شد</p>
+                      <p class="sub-text text-muted">1 ساعت قبل</p>
+                    </div>
+                  </a>
+
+                  <a href="javascript:;" class="dropdown-item">
+                    <div class="icon">
+                      <i data-feather="layers"></i>
+                    </div>
+
+                    <div class="content">
+                      <p>عملیات خرید سیم کارت ناموفق بود</p>
+                      <p class="sub-text text-muted">5 ساعت قبل</p>
+                    </div>
+                  </a>
+
+                  <a href="javascript:;" class="dropdown-item">
+                    <div class="icon">
+                      <i data-feather="download"></i>
+                    </div>
+                    <div class="content">
+                      <p>دانلود تکمیل شد</p>
+                      <p class="sub-text text-muted">6 ساعت قبل</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="dropdown-footer d-flex align-items-center justify-content-center">
+                  <a href="javascript:;">مشاهده همه</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown nav-profile">
+              <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="../assets/images/admin.jpg" alt="userr" style="padding: 4px;">
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="profileDropdown">
+                <div class="dropdown-header d-flex flex-column align-items-center">
+                  <div class="figure mb-3">
+                    <img src="../assets/images/admin.jpg" alt="">
+                  </div>
+
+                  <div class="info text-center">
+                    <p class="name font-weight-bold mb-0">امیر امیری</p>
+                    <p class="email text-muted mb-3">9998800841</p>
+                  </div>
+                </div>
+
+                <div class="dropdown-body">
+                  <ul class="profile-nav p-0 pt-3">
+                    <li class="nav-item">
+                      <a href="../demo_3/pages/general/EditProfile.html" class="nav-link">
+                        <i data-feather="user"></i>
+                        <span>پروفایل</span>
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a href="../demo_3/pages/general/EditProfile.html" class="nav-link">
+                        <i data-feather="edit"></i>
+                        <span>ویرایش پروفایل</span>
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a href="javascript:;" class="nav-link">
+                        <i data-feather="log-out"></i>
+                        <span>خروج</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- partial -->
+
+      <div class="page-content">
+
+        <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
+          <div>
+            <h4 class="mb-3 mb-md-0">به داشبورد خوش آمدید</h4><br/>
+            <h4 class="mb-3 mb-md-0">امیر امیری</h4><br/>
+            <h4 class="mb-3 mb-md-0">9998800841</h4>
+          </div>
+
+          <div class="d-flex align-items-center flex-wrap text-nowrap">
+            
+            <button type="button" class="btn btn-outline-primary btn-icon-text ml-2 d-none d-md-block">
+              <i data-feather="credit-card" style="padding:3px;"></i><a href="../demo_3/pages/general/Sim-products.html" style="color:black">
+                خرید سیم کارت   
+            </button></a>
+
+            <button type="button" class="btn btn-outline-danger btn-icon-text ml-2 d-none d-md-block">
+              <i data-feather="credit-card" style="padding:3px;"></i><a href="#" style="color:#1d1d1b">
+                خرید بسته جدید
+            </button></a>
+
+            <button type="button" class="btn btn-success btn-icon-text mb-2 mb-md-0">
+              <i data-feather="shopping-cart" style="padding: 4px;"></i><a href="../demo_3/pages/general/AddAccount.html" style="color:white">
+               افزایش موجودی حساب 
+            </button></a>
+          </div>
+        </div>
+ 
+<!--progrees bar & tables-->
+
+
+<div class="row">
+  <div class="col-lg-7 col-xl-8 grid-margin stretch-card" style="box-shadow: 1px 1px 6px #bfbfbf;">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-baseline mb-2">
+          <h6 class="card-title mb-0">ریز گزارش حجم مصرفی </h6>
+          <div class="dropdown mb-2">
+            <button class="btn p-0" type="button" id="dropdownMenuButton4" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton4">
+             
+              <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="printer"
+                  class="icon-sm ml-2"></i> <span class="">چاپ</span></a>
+              <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="download"
+                  class="icon-sm ml-2"></i> <span class="">دانلود</span></a>
+            </div>
+          </div>
+        </div>
+        <p class="text-muted mb-4">نمودار حجم مصرفی بسته اینترنت در یک سال اخیر</p>
+        <div class="monthly-sales-chart-wrapper">
+          <canvas id="monthly-sales-chart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--chartjs dataModel-->
+      <div class="col-lg-5 col-xl-4 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body" style="box-shadow: 1px 1px 6px #bfbfbf;">
+            <div class="d-flex justify-content-between align-items-baseline mb-2">
+
+              <h6 class="card-title mb-0">میزان حجم مصرفی من</h6>
+
+              <div class="dropdown mb-2">
+
+                <button class="btn p-0" type="button" id="dropdownMenuButton5" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
+                </button>
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton5">
+
+                  <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="printer"
+                      class="icon-sm ml-2"></i> <span class="">چاپ</span></a>
+
+                  <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="download"
+                      class="icon-sm ml-2"></i> <span class="">دانلود</span></a>
+
+                </div>
+              </div>
+            </div>
+            
+            <div id="progressbar1" class="mx-auto"></div>
+            <div class="row mt-4 mb-3">
+              <div class="col-6 d-flex justify-content-end">
+                <div>
+                  <label
+                    class="d-flex align-items-center justify-content-end tx-10 text-uppercase font-weight-medium">کل
+                      حجم بسته <span class="p-1 mr-1 rounded-circle bg-primary-muted"></span></label>
+                  <h5 class="font-weight-bold mb-0 text-left">1GB</h5>
+                </div>
+              </div>
+              <div class="col-6">
+                <div>
+                  <label class="d-flex align-items-center tx-10 text-uppercase font-weight-medium"><span
+                      class="p-1 ml-1 rounded-circle bg-primary"></span>مانده بسته فعلی</label>
+                  <h5 class="font-weight-bold mb-0">200MB</h5>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-block"><a href="#" style="color:white" ><a href="../demo_3/pages/general/Tamdid.html" style="color: white;">تمدید بسته فعلی</button></a>                    
+        </div>
+      </div>
+      </div> 
+
+      <!-- row1 -->
+      <!--table-->
+<!-- 
+      <div class="container-fluid mt-5 d-flex justify-content-center w-200" style="box-shadow: 1px 1px 6px #bfbfbf;">
+        <div class="table-responsive w-100">
+          <h6 style="margin-bottom:30px;margin-top:10px">ریز تراکنش 7 روز اخیر</h6>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th style="text-align: right;">نوع سرویس </th>
+                <th style="text-align: right;">تاریخ خرید سرویس</th>
+                <th class="text-right">تاریخ  اتمام اعتبار سرویس</th>
+                <th class="text-right">تعداد سرویس ها</th>
+                <th class="text-right">مبلغ پرداختی</th>
+                <th style="text-align: right;">وضعیت سرویس</th>
+              </tr>
+
+            </thead>
+
+            <tbody>
+              <tr class="text-right">
+                <td class="text-right">400مگابایت شبانه</td>
+                <td class="text-right">1399/02/03</td>
+                <td>13399/03/04</td>
+                <td>1</td>
+                <td>110,000 تومان</td>
+                <td style="color:green">فعال</td>
+              </tr>
+
+              <tr class="text-right">
+                <td class="text-right">400مگابایت شبانه</td>
+                <td class="text-right">1399/02/03</td>
+                <td>13399/03/04</td>
+                <td>2</td>
+                <td>320,000 تومان</td>
+                <td style="color:red">غیر فعال</td>
+              </tr>
+
+              <tr class="text-right">
+                <td class="text-right">400مگابایت شبانه</td>
+                <td class="text-right"> 1399/02/03</td>
+                <td>13399/03/04</td>
+                <td>1</td>
+                <td>150,000 تومان</td>
+                <td style="color:red">غیر فعال</td>
+              </tr>
+
+              <tr class="text-right">
+                <td class="text-right">400مگابایت شبانه</td>
+                <td class="text-right"> 1399/02/03</td>
+                <td>13399/03/04</td>
+                <td>1</td>
+                <td>150,000 تومان</td>
+                <td style="color:red">غیر فعال</td>
+              </tr>
+
+              <tr class="text-right">
+                <td class="text-right">400مگابایت شبانه</td>
+                <td class="text-right"> 1399/02/03</td>
+                <td>13399/03/04</td>
+                <td>1</td>
+                <td>150,000 تومان</td>
+                <td style="color:red">غیر فعال</td>
+              </tr>
+
+              <tr class="text-right">
+                <td class="text-right">400مگابایت شبانه</td>
+                <td class="text-right"> 1399/02/03</td>
+                <td>13399/03/04</td>
+                <td>1</td>
+                <td>150,000 تومان</td>
+                <td style="color:red">غیر فعال</td>
+              </tr>
+              
+              <tr class="text-right">
+                <td class="text-right">400مگابایت شبانه</td>
+                <td class="text-right">1399/02/03</td>
+                <td>13399/03/04</td>
+                <td>1</td>
+                <td>30,000 تومان</td>
+                <td style="color:red">غیر فعال</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div> -->
+
+
+      <div style="padding: 30px;">
+
+      </div>
+
+      
+      
+      <!-- partial:partials/_footer.html -->
+      <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <p class="text-muted text-center text-md-left">Copyright © 2021،تمامی حقوق مادی و معنوی این سایت متعلق به شرکت <a href="https://www.ariantel.ir" style="color:green;"> آرین تل </a> می باشد </p>
+      </footer>
+      <!-- partial -->
+
+    </div>
+  </div>
+
+  <!-- core:js -->
+  <script src="../assets/vendors/core/core.js"></script>
+  <script src="../assets/vendors/chartjs/Chart.min.js"></script>
+  <script src="../assets/vendors/jquery.flot/jquery.flot.js"></script>
+  <script src="../assets/vendors/jquery.flot/jquery.flot.resize.js"></script>
+  <script src="../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="../assets/vendors/apexcharts/apexcharts.min.js"></script>
+  <script src="../assets/vendors/progressbar.js/progressbar.min.js"></script>
+  <script src="../assets/vendors/feather-icons/feather.min.js"></script>
+  <script src="../assets/js/template.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+  <script src="../assets/js/datepicker.js"></script>
+  <script src="../assets/js/persian-date-0.1.8.min.js"></script>
+  <script src="../assets/js/persian-datepicker-0.4.5.min.js"></script>
+</body>
+
+</html>
